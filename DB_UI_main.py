@@ -2,7 +2,6 @@
 
 from PyQt4 import QtCore, QtGui
 import main, sys
-import mysql.connector
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
