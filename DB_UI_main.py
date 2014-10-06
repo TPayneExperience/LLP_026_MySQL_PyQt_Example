@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from PyQt4 import QtCore, QtGui
-import main, sys
+import DB_manager, sys
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -20,7 +20,7 @@ except AttributeError:
 class Ui_TPayne_MySQL_Tool(QtGui.QWidget):
     def __init__(self, database, tableName):
         QtGui.QWidget.__init__(self)
-        self.dbu = main.DatabaseUtility(database, tableName)
+        self.dbu = DB_manager.DatabaseUtility(database, tableName)
         self.setupUi(self)
         self.UpdateTree()
 
